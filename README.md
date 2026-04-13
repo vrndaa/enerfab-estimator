@@ -1,12 +1,12 @@
-#Estimation Tool
+# Estimation Tool
 
 A REST API that estimates fabrication project costs based on historical data. Built as a project.
 
-##What it does
+## What it does
 
 When a project manager send vessel specification wrt material, dimensiosn, etc -- the API returns a cost estimate
 
-##How it works 
+## How it works 
 
 - client sends a post request with vessel specs
 - the API queries a SQLite database of historical products
@@ -14,13 +14,13 @@ When a project manager send vessel specification wrt material, dimensiosn, etc -
 - it then calculates the average cost of those matches
 - returns estimate w confidence level & matched project ID
 
-##Stack
+## Stack
 - Pyhton
 - FastAPI
 - SQLite (BigQuery in production)
 - Git
 
-##How to run
+## How to run
 '''bash
 python3 -m venv
 pip install fastapi uvicorn
